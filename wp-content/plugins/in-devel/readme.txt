@@ -1,6 +1,10 @@
 === In Development ===
-Contributors: miceno
-Tags: devel
+Plugin Name: In development utils
+Plugin URI: https://github.com/miceno/wordpress-utils
+Description: A set of tools for development and enhancing your Wordpress experience.
+Version: 0.2
+Author: Orestes Sanchez Benavente
+Author URI: https://blog.estotienearreglo.es
 Requires at least: 3.0.1
 Tested up to: 4.4
 Stable tag: 4.4
