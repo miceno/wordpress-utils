@@ -35,8 +35,9 @@ if ( ! class_exists( 'InDevelopment' ) ) {
 		
 		public function __construct()
 		{
-			/* */
+			/*
 			add_filter( 'jetpack_development_mode', '__return_true' );
+		    */
 		}
 	}
 	new InDevelopment;
@@ -127,3 +128,20 @@ function dequeue_devicepx() {
 }
 add_action( 'wp_enqueue_scripts', 'dequeue_devicepx', 20 );
 
+/*
+ * Write log messages
+ */
+
+if (!function_exists('write_log')) {
+
+	function write_log($log) {
+		if (true === WP_DEBUG) {
+			if (is_array($log) || is_object($log)) {
+				error_log(print_r($log, true));
+			} else {
+				error_log($log);
+			}
+		}
+	}
+
+}
