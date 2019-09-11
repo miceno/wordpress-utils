@@ -1,0 +1,16 @@
+<wpml-config>
+    <admin-texts>
+        <key name="theme_mods_bldr-child">
+            <key name="bldr_footerid" />
+            <key name="bldr_hero_button_text" />
+            <key name="bldr_second_heading" />
+            <key name="bldr_first_heading" />
+        </key>
+        <key name="theme_mods_bldr">
+            <key name="bldr_footerid" />
+            <key name="bldr_hero_button_text" />
+            <key name="bldr_second_heading" />
+            <key name="bldr_first_heading" />
+        </key>
+    </admin-texts>
+</wpml-config>

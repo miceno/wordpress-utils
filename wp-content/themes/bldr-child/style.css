@@ -1,0 +1,146 @@
+/*
+Theme Name: BLDR Child
+Theme URI: http://modernthemes.net/wordpress-themes/bldr/
+Author: Orestes Sanchez
+Description: A theme inspired on BLDR
+Version: 1.1.1-custom
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Template: bldr
+Tags: light, blue, red, yellow, green, purple, orange, black, one-column, two-columns, three-columns, left-sidebar, right-sidebar, fluid-layout, responsive-layout, theme-options, translation-ready, custom-colors, featured-images, post-formats, rtl-language-support, full-width-template
+
+BLDR, Copyright 2015 ModernThemes
+BLDR is distributed under the terms of the GNU GPL
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+BLDR is built with Underscores http://underscores.me/, (C) 2012-2014 Automattic, Inc.
+
+BLDR incorporates code from Moesia, Copyright 2014 aThemes
+Moesia is distributed under the terms of the GNU GPL
+
+BLDR bundles the following third-party resources:
+
+Simple Grid by ThisisDallas Copyright (C) 2013 Dallas Bass
+Simple Grid is licensed under the MIT License.
+http://thisisdallas.github.io/Simple-Grid/
+
+Font Awesome by Dave Gandy
+Font Awesome is licensed under the following: (Font: SIL OFL 1.1, CSS: MIT License)
+http://fortawesome.github.io/Font-Awesome/
+
+Animate-plus.js by Telmo Marques Copyright (c) 2014
+Animate-plus.js is licensed under the MIT License.
+https://github.com/telmomarques/animate-plus.js
+
+slick.js by Ken Wheeler Copyright (c) 2014
+slick.js is licensed under the MIT License.
+https://github.com/kenwheeler/slick
+
+Parallax.js by PixelCog Inc. (c) 2015 PixelCog Inc.
+Parallax.js is distributed under the The MIT License (MIT).
+https://github.com/pixelcog/parallax.js
+
+The HTML5 Shiv by aFarkas Copyright (c) 2014 Alexander Farkas (aFarkas).
+The HTML5 Shiv is licensed under the terms of the GNU GPLv2
+https://github.com/aFarkas/html5shiv
+
+jPushMenu by takien
+jPushMenu is distributed under the The MIT License (MIT).
+https://github.com/takien/jPushMenu
+
+Headesive.js by Mark Goodyear Copyright (c) 2014
+Headesive.js is licensed under the MIT License.
+https://github.com/markgoodyear/headhesive.js/tree/master
+
+bldr.jpg provided as a free stock image from unsplash.com
+Image link: https://download.unsplash.com/photo-1418479631014-8cbf89db3431
+All Unpslash photos licensed under Creative Commons Zero
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+*/
+
+
+/*
+  =========================
+  Overriden styles
+  =========================
+*/
+
+
+.banner--stick h1.site-title a,
+.site-header h1.site-title a {
+   color: black;
+}
+
+#masthead.banner--clone {
+	background-color: rgba(255, 255, 255, 0.85);
+}
+
+.client-container {
+/*	 width: auto; */
+}
+
+.site-branding {
+	max-width: 24em;
+}
+
+
+.lower-caption {
+	display: block;
+	position: absolute;
+	bottom: 0;
+	color: white;
+	margin: auto 15px;
+}
+
+@media screen and ( max-width : 767px ) {
+
+	/* Make font smaller */
+	h1.site-title {
+		font-size: 32px;
+	}
+
+} /* max-width : 767px */
+
+@media screen and ( max-width : 400px ) {
+
+	/* Make font smaller */
+	h1.site-title {
+		font-size: 22px;
+	}
+
+} /* max-width : 400px */
+
+.sow-submit-wrapper input.sow-submit {
+	font-size: 1em !important;
+}
+
+.sow-features-feature p.sow-more-text > a {
+	border: 1px solid;
+	border-color: #039BE5;
+	-webkit-border-radius: 100px;
+	border-radius: 100px;
+	background: #039BE5;
+	box-shadow: none;
+	color: #FFF;
+	font-size: 13px;
+	line-height: 1;
+	padding: 1em 2em;
+	text-shadow: none;
+	text-transform: uppercase;
+	font-weight: 600;
+	letter-spacing: 0.2em;
+}

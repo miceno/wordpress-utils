@@ -1,0 +1,53 @@
+/* 
+*/
+
+/* =Start From Here
+-------------------------------------------------------------- */
+
+/**
+* Google Maps responsiveness
+* See http://www.labnol.org/internet/embed-responsive-google-maps/28333/
+*/
+
+.responsive-iframe-wrapper {
+    position: relative;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+}
+
+.responsive-iframe-wrapper iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.aspect-folio{
+    padding-bottom: 141.42%;
+}
+
+.aspect-mundo-deportivo{
+    padding-bottom: 120%;
+}
+
+
+.aspect-panoramic{
+    padding-bottom: 56.25%;
+}
+
+.aspect-traditional{
+    padding-bottom: 75%;
+}
+
+/* This is to prevent zooming on the maps */
+.google-maps-disable-zoom iframe{
+    pointer-events: none;
+}
+
+
+
+
+
+/*The last 29 days of the month are the hardest."- Nikola Tesla*/
