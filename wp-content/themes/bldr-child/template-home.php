@@ -19,13 +19,13 @@ get_header('home'); ?>
             
             	<?php if ( get_theme_mod( 'bldr_first_heading' ) ) : ?>
                 	<h1 class="animate-plus animate-init" data-animations="fadeInDown" data-animation-delay="0.5s">
-						<?php echo esc_html( get_theme_mod( 'bldr_first_heading')) ?>
+						<?php echo do_shortcode(get_theme_mod( 'bldr_first_heading')) ?>
                     </h1> 
                 <?php endif; ?>
                 
                 <?php if ( get_theme_mod( 'bldr_second_heading' ) ) : ?>
                 	<h2 class="animate-plus animate-init" data-animations="fadeIn" data-animation-delay="1s">
-						<?php echo esc_html( get_theme_mod( 'bldr_second_heading')) ?>
+						<?php echo do_shortcode(get_theme_mod( 'bldr_second_heading')) ?>
                     </h2>
                	<?php endif; ?> 
                 

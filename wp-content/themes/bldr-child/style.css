@@ -72,25 +72,34 @@ Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 */
 
-
 /*
   =========================
   Overriden styles
   =========================
 */
 
+.site-header-home {
+	z-index: 1000;
+}
+
+.site-footer .widget-title {
+	line-height: 1.1em;
+}
 
 .banner--stick h1.site-title a,
 .site-header h1.site-title a {
    color: black;
 }
 
-#masthead.banner--clone {
-	background-color: rgba(255, 255, 255, 0.85);
+.site-header-home .navigation-container ul.menu > li > a,
+.site-header-home .site-title a,
+div.so-widget-sow-hero div.sow-slider-base ul.sow-slider-images .sow-slider-image-wrapper p,
+div.so-widget-sow-hero div.sow-slider-base ul.sow-slider-images a {
+	text-shadow: 0 2px 2px rgba(0,0,0,0.5);	
 }
 
-.client-container {
-/*	 width: auto; */
+#masthead.banner--clone {
+	background-color: rgba(255, 255, 255, 0.85);
 }
 
 .site-branding {
@@ -105,24 +114,6 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	color: white;
 	margin: auto 15px;
 }
-
-@media screen and ( max-width : 767px ) {
-
-	/* Make font smaller */
-	h1.site-title {
-		font-size: 32px;
-	}
-
-} /* max-width : 767px */
-
-@media screen and ( max-width : 400px ) {
-
-	/* Make font smaller */
-	h1.site-title {
-		font-size: 22px;
-	}
-
-} /* max-width : 400px */
 
 .sow-submit-wrapper input.sow-submit {
 	font-size: 1em !important;
@@ -144,3 +135,100 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	font-weight: 600;
 	letter-spacing: 0.2em;
 }
+
+div.product_meta span.sku_wrapper {
+        display: block;
+}
+
+
+
+.search-form {
+	position: absolute;
+	right: 0;
+	top: 4em;
+}
+
+.search-form .search-submit {
+	display: none;
+}
+
+
+input.search-field {
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	height: 2em;
+	margin: 0;
+	padding: 0 0 0 34px;
+	position: relative;
+	-webkit-transition: width 400ms ease, background 400ms ease;
+	transition: width 400ms ease, background 400ms ease;
+	width: 1px;
+}
+input.search-field:focus {
+	background-color: #fff;
+	cursor: text;
+	outline: 0;
+	width: 15em;
+	padding: 0 0 0 3px;
+}
+.icon-search {
+	color: white;
+	position: relative;
+	left: -25px;
+	cursor: pointer;
+	z-index: -10;
+}
+input.search-field:focus + .icon-search {
+	color: black;
+	z-index: 10;
+	position: relative;
+	right: 25px;
+	left: initial;
+}
+
+/*
+  =========================
+  WooCommerce Overriden styles
+  =========================
+*/
+
+.woocommerce ul.products li.product div.star-rating,
+.woocommerce-product-rating .star-rating,
+.product_list_widget .star-rating {
+	display:none;
+}
+
+.woocommerce span.onsale {
+        font-size: 1.357em;
+        left: 0.5em;
+}
+
+.woocommerce-loop-product__link .woocommerce-loop-product__title {
+	line-height: 1.1em;
+}
+
+/*
+  =========================
+  Media overrides
+  =========================
+*/
+
+@media screen and ( max-width : 767px ) {
+
+	/* Make font smaller */
+	h1.site-title {
+		font-size: 32px;
+	}
+
+} /* max-width : 767px */
+
+@media screen and ( max-width : 400px ) {
+
+	/* Make font smaller */
+	h1.site-title {
+		font-size: 22px;
+	}
+
+} /* max-width : 400px */
+
